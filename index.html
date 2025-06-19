@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Quote App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-bar">
+  <button class="auth-btn">Login</button>
+  <button class="auth-btn">Signup</button>
+</div>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <!-- <img src="logo.png" alt="Logo" class="logo"> -->
+    <h1>Welcome to Mood Quote App</h1>
+    <h2>Your daily dose of mood-based motivation</h2>
+    <button class="start-btn" onclick="scrollToMood()">Start</button>
+  </section>
+
+  <!-- Mood Tracker Section -->
+  <section id="mood" class="mood-section">
+    <h2>How Are You Feeling Today?</h2>
+    <div class="moods">
+      <button onclick="showQuote('happy')">😊 Happy</button>
+      <button onclick="showQuote('sad')">😢 Sad</button>
+      <button onclick="showQuote('angry')">😠 Angry</button>
+      <button onclick="showQuote('neutral')">😐 Neutral</button>
+    </div>
+    <div id="quoteBox" class="quote-box">
+      <p>Select a mood to get a quote!</p>
+    </div>
+    <!-- 3rd Section: Daily Challenge -->
+<section id="challenge" class="challenge-section">
+  <h2>Today's Small Challenge</h2>
+  <p id="challengeText">Click below to get your challenge!</p>
+  <button onclick="showChallenge()" class="action-btn">Get Challenge</button>
+</section>
+
+<!-- 4th Section: Self-Care Tips -->
+<section id="tips" class="tips-section">
+  <h2>Self-Care Tips</h2>
+  <ul id="tipList"></ul>
+  <button onclick="showNextTip()" class="action-btn">Show Next Tip</button>
+</section>
+
+<!-- 5th Section: Gratitude Notes -->
+<section id="gratitude" class="gratitude-section">
+  <h2>What Are You Grateful For Today?</h2>
+  <textarea id="gratitudeInput" placeholder="Type your note here..."></textarea>
+  <button onclick="saveGratitude()" class="action-btn">Save</button>
+  <div id="gratitudeDisplay"></div>
+  <footer class="footer">
+  <p>© 2024 Copyright : Gayathri</p>
+</footer>
+  <button onclick="scrollToTop()" class="top-btn">↑ Top</button>
+</section>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
