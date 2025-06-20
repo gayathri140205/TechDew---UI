@@ -15,8 +15,8 @@ function updateAffirmation() {
   currentAffirmation = (currentAffirmation + 1) % affirmations.length;
 }
 
-// Start changing affirmations every 3 seconds
+
 setInterval(updateAffirmation, 3000);
 
-// Initial load
+
 document.addEventListener("DOMContentLoaded", updateAffirmation);

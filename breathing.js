@@ -1,5 +1,5 @@
 const breathText = document.getElementById("breath-text");
-const cycleTime = 7000; // 7 seconds
+const cycleTime = 7000; 
 
 function startBreathingCycle() {
   breathText.innerText = "Inhale...";

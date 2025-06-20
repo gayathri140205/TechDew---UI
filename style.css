@@ -10,7 +10,7 @@ section {
   color: #fff;
 }
 
-/* Home Section with background image + gradient */
+
 .home-section {
   min-height: 100vh;
   display: flex;
@@ -21,7 +21,7 @@ section {
               url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
 }
 
-/* Mood Section with light gradient + forest image */
+
 .mood-section {
   min-height: 100vh;
   background: linear-gradient(to top right, rgba(255, 255, 255, 0.8), rgba(173, 216, 230, 0.7)),
@@ -136,7 +136,7 @@ section {
   background-color: #ffd24c;
 }
 .quote-box {
-  margin: 30px auto 50px; /* ← this 50px bottom margin adds the needed gap */
+  margin: 30px auto 50px;
   padding: 25px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.9);

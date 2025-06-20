@@ -30,7 +30,7 @@ function showQuote(mood) {
   const randomIndex = Math.floor(Math.random() * moodQuotes.length);
   document.getElementById('quoteBox').innerHTML = `<p>"${moodQuotes[randomIndex]}"</p>`;
 }
-// 3rd Section - Daily Challenges
+
 const challenges = [
   "Drink 2 liters of water today.",
   "Go for a 10-minute walk.",
@@ -44,7 +44,7 @@ function showChallenge() {
   document.getElementById("challengeText").innerText = challenges[index];
 }
 
-// 4th Section - Self-Care Tips
+
 const tips = [
   "Sleep at least 7 hours tonight.",
   "Unfollow one negative account.",
@@ -66,7 +66,7 @@ function showNextTip() {
   }
 }
 
-// 5th Section - Gratitude Note
+
 function saveGratitude() {
   const input = document.getElementById("gratitudeInput").value.trim();
   if (input) {
